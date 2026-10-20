@@ -1,0 +1,401 @@
+
+.academic-lab {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  color: #e9eaf5;
+}
+
+.academic-heading {
+  margin-bottom: 36px;
+}
+
+.academic-eyebrow,
+.circuit-label,
+.academic-state span {
+  color: #a6a0ff;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.academic-heading h1 {
+  margin: 12px 0;
+  font-size: clamp(36px, 6vw, 60px);
+}
+
+.academic-heading > p,
+.academic-card > p {
+  color: #b7b9ce;
+  line-height: 1.7;
+}
+
+.academic-card {
+  margin: 22px 0;
+  padding: 26px;
+  border: 1px solid #34364e;
+  border-radius: 18px;
+  background: #171827;
+}
+
+.academic-card h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.academic-options,
+.academic-gates,
+.academic-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.academic-lab button {
+  padding: 12px 16px;
+  border: 1px solid #454762;
+  border-radius: 10px;
+  background: #22243a;
+  color: #f4f3ff;
+  cursor: pointer;
+}
+
+.academic-lab button:hover,
+.academic-lab button.selected {
+  border-color: #a6a0ff;
+  background: #343052;
+}
+
+.academic-gates button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  min-width: 110px;
+}
+
+.academic-gates button strong {
+  font-size: 24px;
+}
+
+.academic-gates button span {
+  color: #b7b9ce;
+  font-size: 12px;
+}
+
+.academic-state {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #22243a;
+}
+
+.academic-state strong {
+  font-size: 30px;
+}
+
+.academic-circuit {
+  margin-top: 28px;
+}
+
+.circuit-wire {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 90px;
+  margin-top: 14px;
+  padding: 14px;
+  overflow-x: auto;
+  border-radius: 12px;
+  background: #22243a;
+}
+
+.circuit-wire > strong {
+  white-space: nowrap;
+}
+
+.circuit-gate {
+  display: grid;
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid #a6a0ff;
+  border-radius: 9px;
+  background: #343052;
+  font-weight: bold;
+}
+
+.circuit-end {
+  color: #a6a0ff;
+  font-size: 24px;
+}
+
+.academic-actions {
+  justify-content: flex-end;
+}
+
+.academic-lab .calculate-button {
+  border-color: #a6a0ff;
+  background: #6256b5;
+}
+
+.academic-explanations li {
+  margin: 16px 0;
+}
+
+.academic-explanations p {
+  color: #b7b9ce;
+  line-height: 1.6;
+}
+
+.academic-result {
+  border-color: #7169b5;
+}
+
+@media (max-width: 600px) {
+  .academic-lab {
+    padding: 36px 16px;
+  }
+
+  .academic-card {
+    padding: 20px;
+  }
+}
+
+.probability-row {
+  margin: 24px 0;
+}
+
+.probability-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.probability-heading strong {
+  color: #a6a0ff;
+}
+
+.probability-track {
+  height: 12px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #303148;
+}
+
+.probability-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: #a6a0ff;
+  transition: width 0.25s ease;
+}
+
+.academic-result h3 {
+  color: #a6a0ff;
+}
+
+.academic-lab label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 18px 0;
+  color: #b7b9ce;
+}
+
+.academic-lab select {
+  width: 100%;
+  max-width: 320px;
+  padding: 12px;
+  border: 1px solid #454762;
+  border-radius: 10px;
+  background: #22243a;
+  color: #f4f3ff;
+}
+
+.state-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.state-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #22243a;
+}
+
+.state-item code {
+  color: #a6a0ff;
+}
+
+.state-item span {
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+.academic-lab .probability-row {
+  margin: 20px 0;
+}
+
+.academic-lab .probability-track {
+  width: 100%;
+}
+
+.academic-lab .academic-actions {
+  margin-bottom: 20px;
+}
+
+/* Visual quantum circuit layout */
+.visual-circuit {
+  margin-top: 28px;
+  padding: 20px;
+  border: 1px solid rgba(166, 160, 255, 0.22);
+  border-radius: 14px;
+  background: #171827;
+}
+
+.visual-circuit h3 {
+  margin-top: 0;
+  color: #f4f3ff;
+}
+
+.visual-circuit-scroll {
+  width: 100%;
+  overflow-x: auto;
+  padding: 12px 0;
+}
+
+.visual-wire-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 44px;
+  grid-auto-columns: 90px;
+  width: max-content;
+  min-width: 100%;
+  align-items: center;
+  min-height: 64px;
+}
+
+.visual-qubit-label {
+  color: #a6a0ff;
+  font-weight: 700;
+}
+
+.visual-gate-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  min-height: 64px;
+  background: linear-gradient(
+    to bottom,
+    transparent calc(50% - 1px),
+    #555773 calc(50% - 1px),
+    #555773 calc(50% + 1px),
+    transparent calc(50% + 1px)
+  );
+}
+
+.visual-gate {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #a6a0ff;
+  border-radius: 7px;
+  background: #292744;
+  color: #f4f3ff;
+  font-weight: 700;
+}
+
+.visual-multi-gate {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #a6a0ff;
+  color: #171827;
+  font-size: 18px;
+}
+
+/* Vertical connection between multi-qubit gate symbols */
+.visual-gate-cell {
+  position: relative;
+}
+
+.visual-connector {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  background: #a6a0ff;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.visual-circuit-grid {
+  display: grid;
+  grid-auto-rows: 64px;
+  width: max-content;
+  min-width: 100%;
+}
+
+.visual-label-column,
+.visual-gate-column {
+  display: grid;
+  grid-template-rows: repeat(var(--unused, 1), 64px);
+}
+
+.visual-label-column {
+  grid-auto-rows: 64px;
+  align-items: center;
+}
+
+.visual-gate-column {
+  position: relative;
+  grid-auto-rows: 64px;
+}
+
+.visual-gate-cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 64px;
+  background: linear-gradient(
+    to bottom,
+    transparent 31px,
+    #555773 31px,
+    #555773 33px,
+    transparent 33px
+  );
+}
+
+.visual-qubit-label {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  color: #a6a0ff;
+  font-weight: 700;
+}
+
+.visual-connector {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  background: #a6a0ff;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
